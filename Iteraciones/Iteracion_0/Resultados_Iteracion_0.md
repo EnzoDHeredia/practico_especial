@@ -24,4 +24,4 @@ La decisión fue guiada por los requerimientos, atributos de calidad y restricci
 ## Artefactos Generados
 - **ADR de la Migración a Microservicios**: Documento que registra la decisión de diseño. [Ver ADR](ADR_Iteracion_0.md).
 - **Documento de Requerimientos, Atributos de Calidad y Restricciones**: Documento de referencia general con todos los requerimientos iniciales. [Ver documento](../../Doumentacion_Inicial/Requerimientos_Atributos_Calidad_Restricciones.md).
-- **Diagrama General de Microservicios**: Representa la propuesta inicial de la arquitectura, mostrando los servicios principales y sus interacciones. [Ver diagrama](artefacto_iteracion_0_diagrama_general_microservicios.png).
+- **Diagrama General de Microservicios**: Representa la propuesta inicial de la arquitectura, mostrando los servicios principales y sus interacciones. [Ver diagrama](Imagenes/Diagrama_Microservicios_generico.jpg).
