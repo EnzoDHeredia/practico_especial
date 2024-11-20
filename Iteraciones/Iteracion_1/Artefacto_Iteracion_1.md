@@ -1,3 +1,0 @@
-- **Diagrama de componentes de la Base de Datos**: El siguiente diagrama representa la propuesta sobre como manejar la base de datos con la utilización de CQRS ![Ver diagrama](Imagenes/Diagrama_Componentes_BD.jpg)
-
-- **Diagrama de Secuencia de Gestion de Pedido** El siguiente diagrama corresponde a como será el comportamiento cuando un cliente solicita crear un nuevo pedido. ![Ver diagrama](Imagenes/Diagrama_Secuencia_Gestion_Pedidos.jpg)

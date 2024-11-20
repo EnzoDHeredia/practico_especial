@@ -1,51 +1,65 @@
 # Resultados de la Iteración 2
 
-## Resumen de la Iteración
-En esta iteración se diseñó e implementó el patrón **API Gateway** como punto de entrada único para el microservicio de Gestión de Clientes. Este componente mejora significativamente la seguridad, escalabilidad y rendimiento del sistema, y establece una base sólida para la integración futura de otros microservicios.
+---
 
-La decisión de implementar el patrón API Gateway quedó documentada en un **ADR**, destacando cómo aborda los drivers clave del sistema. Además, se generaron diagramas y configuraciones iniciales que soportan esta implementación.
+## Resumen de las Decisiones
+En esta iteración, se tomaron tres decisiones clave para el rediseño del microservicio de **Gestión de Clientes** con el objetivo de mejorar la escalabilidad, trazabilidad y seguridad del sistema. Estas decisiones incluyen:
 
-## Referencias
+1. **Unificación de los microservicios de Estadísticas y Notificación de Estado de Pedido:**  
+   - La decisión fue consolidar estos servicios, centralizando su lógica y reduciendo la redundancia en el sistema.  
+
+2. **Implementación de una Base de Datos de Auditoría para la Gestión de Clientes y Sustitución del Microservicio de Gestión de Roles y Usuarios por un Servidor de Autenticación:**  
+   - Se implementó una base de datos dedicada para auditar y registrar cambios en los datos de clientes, mejorando la trazabilidad.  
+   - Se optó por sustituir el microservicio actual por un servidor especializado en autenticación y gestión de roles, centralizando y asegurando la validación de credenciales.  
+
+---
+
+## Referencias a Documentación Inicial
 1. **Requerimientos del Sistema**:  
    - [Requerimientos, Atributos de Calidad y Restricciones](../../Doumentacion_Inicial/Requerimientos_Atributos_Calidad_Restricciones.md).  
 2. **Tabla de Priorización**:  
    - [Tabla de Criticidad, Complejidad e Importancia](../../Doumentacion_Inicial/Tabala_Requerimientos_Atributos.md).
-3. **ADR Iteración Cero**:  
-   - [Migración a Microservicios](../Iteracion_0/ADR_Iteracion_0.md).
-4. **ADR Iteración 1**:  
-   - [CQRS para Gestión de Pedidos](../Iteracion_1/ADR_Iteracion_1.md).
+---
 
-## Decisiones Tomadas
-1. **Implementación del API Gateway**:
-   - Punto de entrada único para gestionar solicitudes hacia el microservicio de Gestión de Clientes.
-   - Centralización de autenticación y autorización con OAuth2 y tokens JWT.
-2. **Optimización del Rendimiento**:
-   - Uso de caching selectivo para solicitudes frecuentes, como validación de clientes activos.
-   - Configuración de balanceo de carga dinámico para manejar picos de solicitudes.
-3. **Alta Disponibilidad**:
-   - Configuración inicial de descubrimiento de servicios usando Consul/Eureka.
-   - Implementación de políticas de reintento para fallos temporales en los microservicios.
+## Puntos Clave
+1. **Mejora de la Escalabilidad:**  
+   - La unificación de servicios facilita el mantenimiento del sistema y reduce la sobrecarga de infraestructura.  
 
-## Artefactos Generados
-1. **ADR**:
-   - [API Gateway para Gestión de Clientes](../iteracion_2/ADR_iteracion_2.md).
-2. **Diagramas**:
-   - **Diagrama de componentes**: Representa la interacción entre el gateway y los microservicios de Clientes y Pedidos.  
-   - **Diagrama de secuencia**: Flujo desde una solicitud del cliente hasta el microservicio de Gestión de Clientes.  
-3. **Configuración inicial del API Gateway**:
-   - Configuración para autenticación, autorización y caching.  
+2. **Trazabilidad de los Datos de Clientes:**  
+   - La base de datos de auditoría asegura la trazabilidad de los cambios de datos del cliente, lo que mejora la transparencia.  
 
-## Recomendaciones para Iteraciones Futuras
-1. **Extender el API Gateway**:
-   - Incorporar nuevos microservicios bajo el mismo gateway para centralizar la gestión de solicitudes.
-2. **Optimización de Monitoreo**:
-   - Implementar herramientas avanzadas como Prometheus y Grafana para rastrear métricas clave (latencia, errores).
-3. **Pruebas de Resiliencia**:
-   - Simular fallos en el gateway para validar los mecanismos de recuperación automática.
-4. **Despliegues Incrementales**:
-   - Usar blue-green deployment o canary releases para futuras actualizaciones del gateway.
+3. **Seguridad Mejorada:**  
+   - El servidor de autenticación permite una mejor gestión de la seguridad y validación de credenciales, reduciendo la complejidad de los servicios existentes.  
+
+---
 
 ## Lecciones Aprendidas
-- La centralización de la lógica de autenticación y autorización reduce significativamente la complejidad en los microservicios individuales.
-- La configuración inicial del API Gateway puede ser compleja, pero una vez establecida, facilita el manejo de solicitudes a gran escala.
-- La integración de caching mejora el rendimiento en consultas frecuentes y reduce la carga en los microservicios dependientes.
+- **Desafíos de integración:**  
+  - La integración de los servicios de Estadísticas y Notificación de Estado de Pedido presentó desafíos, pero la consolidación facilita el mantenimiento futuro.  
+
+- **Complejidad inicial:**  
+  - La implementación de la base de datos de auditoría y el servidor de autenticación introdujo complejidad adicional, pero mejoró la trazabilidad y la seguridad del sistema.  
+
+- **Eficiencia operativa:**  
+  - La centralización de roles y autenticación contribuye a una mejor gestión del sistema a largo plazo, aunque requiere alta disponibilidad para evitar puntos únicos de fallo.  
+
+---
+
+## Recomendaciones para la Siguiente Iteración
+1. **Optimizar la infraestructura de auditoría:**  
+   - Mejorar la escalabilidad de la base de datos de auditoría, considerando particionamiento o replicación.  
+
+2. **Escalar el servidor de autenticación:**  
+   - Implementar alta disponibilidad para el servidor de autenticación, evitando que se convierta en un cuello de botella.  
+
+3. **Evaluar la integración de más servicios:**  
+   - A medida que más servicios sean integrados al sistema, seguir un patrón similar de unificación y centralización para mejorar la eficiencia.  
+
+---
+
+## Artefactos Generados
+1. **ADR sobre la Unificación de los Microservicios de Estadísticas y Notificación de Estado de Pedido:**  
+   - [Ver ADR](../../ADRs/ADR_006_API_Gateway_Pattern.md)  
+
+2. **ADR sobre la Implementación de una Base de Datos de Auditoría para la Gestión de Cliente y la Sustitución del Microservicio de Gestión de Roles y Usuarios por un Servidor de Autenticación:**  
+   - [Ver ADR](../../ADRs/ADR_007_Unificacion_Servicios.md)  

@@ -10,6 +10,8 @@ En la Iteración 0 se establece la base arquitectónica del sistema, tomando la 
 4. **Tomar una decisión de diseño**: Decidir si se migrará a microservicios y documentar los motivos y consecuencias de esta decisión en un ADR (Architecture Decision Record).
 
 ## Artefactos Generados
-- **ADR de la Migración a Microservicios**: Documento que registra la decisión de adoptar una arquitectura de microservicios. [Ver ADR](ADR_Iteracion_0.md).
+- **ADR de la Migración a Microservicios**: Documento que registra la decisión de adoptar una arquitectura de microservicios. [Ver ADR](../../ADRs/ADR_001_Migracion_Arquitectura.md).
 - **Documento de Requerimientos, Atributos de Calidad y Restricciones**: Documento de referencia general que detalla los requisitos, atributos de calidad y restricciones técnicas que guiarán el proceso de diseño. [Ver documento](../../Doumentacion_Inicial/Requerimientos_Atributos_Calidad_Restricciones.md).
 - **Diagrama General de Microservicios**: Representa la propuesta inicial de la arquitectura, mostrando los servicios principales y sus interacciones. [Ver diagrama](Imagenes/Diagrama_Microservicios_generico.jpg).
+- **Referencias**: La priorización de los requerimientos y atributos de calidad se documenta en:
+[Tabla de Requerimientos y de Atributos de calidad](../../Doumentacion_Inicial/Tabala_Requerimientos_Atributos.md).
