@@ -58,7 +58,7 @@ Este directorio contiene los resultados y avances documentados de cada iteració
 
 Resultado final del **Arquitectura de Diseño Detallado (ADD)**:
 
-- ![**Diagrama Final de ADD**](Imagenes/Diagrama_Generico_Iteracion4_adr.jpg)
+![**Diagrama Final de ADD**](Imagenes/Diagrama_Generico_Iteracion4_adr.jpg)
 
 Este diagrama resume y detalla la arquitectura diseñada, incluyendo los componentes clave, sus interacciones y las decisiones finales que guían la implementación.
 
