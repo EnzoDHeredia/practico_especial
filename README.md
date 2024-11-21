@@ -30,7 +30,7 @@ Aquí se encuentran los recursos visuales necesarios para comprender la arquitec
 
 - **Contenido**: 
   - Diagramas de **microservicios**, **clases**, **secuencia**, y otros utilizados durante el desarrollo del proyecto.
-  - Cada archivo está nombrado descriptivamente para facilitar su identificación (por ejemplo, `Diagrama_Clases.jpg` o `Diagrama_Secuencia.jpg`).
+  - Cada archivo está nombrado descriptivamente para facilitar su identificación (por ejemplo, `Diagrama_Clases_Iteracion3_Algoritmos.jpg` o `Diagrama_Sequencia_Iteracion1.jpg`).
 - **Propósito**: Apoyar la documentación con representaciones gráficas que faciliten la comprensión del diseño y las interacciones entre componentes.
 
 ---
