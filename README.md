@@ -29,7 +29,7 @@ Este directorio incluye información fundamental para entender los requerimiento
 Aquí se encuentran los recursos visuales necesarios para comprender la arquitectura.
 
 - **Contenido**: 
-  - `Diagrama_Microservicios.png` (o formato correspondiente): Un diagrama que ilustra la arquitectura de los microservicios utilizados en el proyecto.
+  - [Diagrama_Microservicios_generico.jpg](Imagenes/Diagrama_Microservicios_generico.jpg) (o formato correspondiente): Un diagrama que ilustra la arquitectura de los microservicios utilizados en el proyecto.
 - **Propósito**: Apoyar la documentación con representaciones gráficas que faciliten la comprensión del diseño.
 
 ---
@@ -48,7 +48,7 @@ Este directorio contiene los resultados y avances documentados de cada iteració
 
 1. **Para obtener una visión general**: Revisa el directorio [Documentacion Inicial](Documentacion_Inicial/) para entender los requerimientos y objetivos del sistema.
 2. **Para decisiones arquitectónicas**: Consulta los ADRs en el directorio [ADRs](ADRs/) para conocer el razonamiento detrás de cada decisión clave.
-3. **Para entender la arquitectura**: Dirígete a Imagenes](Imagenes/) para visualizar el diagrama de microservicios.
+3. **Para entender la arquitectura**: Dirígete a [Imagenes](Imagenes/) para visualizar el diagrama de microservicios.
 4. **Para seguir el progreso del proyecto**: Explora el contenido de cada iteración en el directorio [Iteraciones](Iteraciones/).
 
 
