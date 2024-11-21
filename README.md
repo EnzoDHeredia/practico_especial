@@ -52,6 +52,19 @@ Este directorio contiene los resultados y avances documentados de cada iteració
 3. **Para entender la arquitectura**: Dirígete a [Imagenes](Imagenes/) para visualizar el diagrama de microservicios.
 4. **Para seguir el progreso del proyecto**: Explora el contenido de cada iteración en el directorio [Iteraciones](Iteraciones/).
 
+---
+
+## Resultado Final del ADD
+
+Resultado final del **Arquitectura de Diseño Detallado (ADD)**:
+
+- ![**Diagrama Final de ADD**](Imagenes/Diagrama_Generico_Iteracion4_adr.jpg).
+
+Este diagrama resume y detalla la arquitectura diseñada, incluyendo los componentes clave, sus interacciones y las decisiones finales que guían la implementación.
+
+---
+
+
 
 
 
