@@ -29,8 +29,9 @@ Este directorio incluye información fundamental para entender los requerimiento
 Aquí se encuentran los recursos visuales necesarios para comprender la arquitectura.
 
 - **Contenido**: 
-  - [Diagrama_Microservicios_generico.jpg](Imagenes/Diagrama_Microservicios_generico.jpg) (o formato correspondiente): Un diagrama que ilustra la arquitectura de los microservicios utilizados en el proyecto.
-- **Propósito**: Apoyar la documentación con representaciones gráficas que faciliten la comprensión del diseño.
+  - Diagramas de **microservicios**, **clases**, **secuencia**, y otros utilizados durante el desarrollo del proyecto.
+  - Cada archivo está nombrado descriptivamente para facilitar su identificación (por ejemplo, `Diagrama_Clases.png` o `Diagrama_Secuencia.png`).
+- **Propósito**: Apoyar la documentación con representaciones gráficas que faciliten la comprensión del diseño y las interacciones entre componentes.
 
 ---
 
