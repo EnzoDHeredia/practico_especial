@@ -1,0 +1,1 @@
+- **Diagrama General version 3**:  Este diagrama es una versión tres del diagrama generado en la iteración cero y uno, en donde se incluyo una nueva reestructuración del sistema a implementar con nuevas decisiones de diseños especificados en los adrs. ![Ver diagrama](../../Imagenes/Diagrama_General_Iteracion_2.jpg)
