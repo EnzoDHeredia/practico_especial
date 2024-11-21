@@ -20,7 +20,7 @@ En este directorio se documentan las decisiones arquitectónicas tomadas durante
 Este directorio incluye información fundamental para entender los requerimientos del sistema y los atributos de calidad.
 
 - **Archivos contenidos**:
-  - `Requerimientos.md`: Detalla los requerimientos funcionales y no funcionales del sistema.
+  - `Requerimientos_Atributos_Calidad_Restricciones.md`: Detalla los requerimientos funcionales y no funcionales del sistema.
   - `Tabla_Requerimientos_Atributos.md`: Relaciona los requerimientos con los atributos de calidad, proporcionando una visión clara de cómo se priorizan y satisfacen los requerimientos clave.
 
 ---
@@ -48,7 +48,7 @@ Este directorio contiene los resultados y avances documentados de cada iteració
 
 1. **Para obtener una visión general**: Revisa el directorio [Documentacion Inicial](Documentacion_Inicial/) para entender los requerimientos y objetivos del sistema.
 2. **Para decisiones arquitectónicas**: Consulta los ADRs en el directorio [ADRs](ADRs/) para conocer el razonamiento detrás de cada decisión clave.
-3. **Para entender la arquitectura**: Dirígete a `Imagenes` para visualizar el diagrama de microservicios.
+3. **Para entender la arquitectura**: Dirígete a Imagenes](Imagenes/) para visualizar el diagrama de microservicios.
 4. **Para seguir el progreso del proyecto**: Explora el contenido de cada iteración en el directorio [Iteraciones](Iteraciones/).
 
 
