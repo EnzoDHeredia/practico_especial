@@ -16,7 +16,7 @@ En este directorio se documentan las decisiones arquitectónicas tomadas durante
 
 ---
 
-### 2. [Documentacion Inicial](Documentacion_inicial/)
+### 2. [Documentacion Inicial](Documentacion_Inicial/)
 Este directorio incluye información fundamental para entender los requerimientos del sistema y los atributos de calidad.
 
 - **Archivos contenidos**:
@@ -46,7 +46,7 @@ Este directorio contiene los resultados y avances documentados de cada iteració
 
 ## Cómo usar este repositorio
 
-1. **Para obtener una visión general**: Revisa el directorio [Documentacion Inicial](Documentacion_inicial/) para entender los requerimientos y objetivos del sistema.
+1. **Para obtener una visión general**: Revisa el directorio [Documentacion Inicial](Documentacion_Inicial/) para entender los requerimientos y objetivos del sistema.
 2. **Para decisiones arquitectónicas**: Consulta los ADRs en el directorio [ADRs](ADRs/) para conocer el razonamiento detrás de cada decisión clave.
 3. **Para entender la arquitectura**: Dirígete a `Imagenes` para visualizar el diagrama de microservicios.
 4. **Para seguir el progreso del proyecto**: Explora el contenido de cada iteración en el directorio [Iteraciones](Iteraciones/).
